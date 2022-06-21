@@ -1,13 +1,14 @@
+import React from 'react';
 import styled from 'styled-components';
-import MdFileRender from 'components/MdFileRender';
 
-const App = () => {
+const Main = () => {
   return (
     <Wrapper>
-      <MdFileRender />
+
     </Wrapper>
   );
 }
 const Wrapper = styled.div``;
 
-export default App;
+
+export default Main;
