@@ -13,6 +13,7 @@ export default createGlobalStyle`
         outline:0;
         box-sizing:border-box;
     }
+
     p{
         margin: 0;
     }
@@ -21,6 +22,9 @@ export default createGlobalStyle`
     @media screen and (${device.tablet}){
     }
     @media screen and (${device.mobile}){
-
+    }
+    
+    img{
+        width: 100%;
     }
 `

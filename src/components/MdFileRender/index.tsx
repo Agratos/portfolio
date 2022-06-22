@@ -3,11 +3,11 @@ import styled from 'styled-components';
 import { marked } from 'marked';
 import useFetch from 'hooks/useFetch';
 
-type mdFileRenderProps = {
+interface mdFileRenderProps {
     mdFile: string;
 }
 const MdFileRender = ({mdFile}: mdFileRenderProps ) => {
-    const [mdText, isError, isLoading] = useFetch(mdFile);
+    const [mdText] = useFetch(mdFile);
 
     return (
         <Wrapper>
@@ -17,10 +17,11 @@ const MdFileRender = ({mdFile}: mdFileRenderProps ) => {
 }
 
 const Wrapper = styled.div`
-    display: flex;
+    display: block;
 `;
 const MdRender = styled.article`
     margin: 0 auto;
+    width: 70%;
 `;
 
 export default MdFileRender

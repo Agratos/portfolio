@@ -1,13 +1,18 @@
-import styled from 'styled-components';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 import Main from 'pages/Main';
+import Error from 'pages/Error';
 
 const App = () => {
   return (
-    <Wrapper>
-      <Main />
-    </Wrapper>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Main />} />
+        <Route path='/*' element={<Error />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
-const Wrapper = styled.div``;
 
 export default App;
