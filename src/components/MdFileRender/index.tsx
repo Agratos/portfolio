@@ -1,29 +1,26 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import styled from 'styled-components';
-
 import { marked } from 'marked';
-import MainMd from 'assets/dummies/main.md';
+import useFetch from 'hooks/useFetch';
 
-const MdFileRender = () => {
-    const [mdText, setMdText] = useState('');
-
-    useEffect(() => {
-      fetch(MainMd).then(res => res.text()).then(text => setMdText(marked(text)));
-    })
+type mdFileRenderProps = {
+    mdFile: string;
+}
+const MdFileRender = ({mdFile}: mdFileRenderProps ) => {
+    const [mdText, isError, isLoading] = useFetch(mdFile);
 
     return (
         <Wrapper>
-            <MdRender dangerouslySetInnerHTML={{__html: mdText}}></MdRender>
+            <MdRender dangerouslySetInnerHTML={{__html:marked(`${mdText}`)}}></MdRender>
         </Wrapper>
     );
 }
+
 const Wrapper = styled.div`
     display: flex;
-    text-align: center;
-    align-items: center;
 `;
 const MdRender = styled.article`
-    margin: auto;
+    margin: 0 auto;
 `;
 
 export default MdFileRender

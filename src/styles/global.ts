@@ -13,6 +13,9 @@ export default createGlobalStyle`
         outline:0;
         box-sizing:border-box;
     }
+    p{
+        margin: 0;
+    }
     @media screen and (${device.pc}){
     }
     @media screen and (${device.tablet}){

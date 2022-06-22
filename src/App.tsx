@@ -1,10 +1,10 @@
 import styled from 'styled-components';
-import MdFileRender from 'components/MdFileRender';
+import Main from 'pages/Main';
 
 const App = () => {
   return (
     <Wrapper>
-      <MdFileRender />
+      <Main />
     </Wrapper>
   );
 }
