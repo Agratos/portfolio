@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 const device = {
     pc: 'min-width: 1200px',
     tablet: 'max-width: 1200px',
-    mobile: 'max-width: 900px'
+    mobile: 'max-width: 600px'
 }
 
 export default createGlobalStyle`
@@ -13,7 +13,6 @@ export default createGlobalStyle`
         outline:0;
         box-sizing:border-box;
     }
-
     p{
         margin: 0;
     }
@@ -22,6 +21,7 @@ export default createGlobalStyle`
     @media screen and (${device.tablet}){
     }
     @media screen and (${device.mobile}){
+        margin: 0 16px;
     }
     
     img{
