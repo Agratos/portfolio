@@ -1,6 +1,6 @@
 <!-- ![header](https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=300&text=Welcome%20to%20Agratos&animation=scaleIn&desc=Study%20every%20day%20to%20become%20a%20better%20then%20yesterday...&descAlign=65&descAlignY=52&fontAlignY=36) -->
 
-<img src='https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=250&fontSize=48&text=Welcome%20to%20Agratos&animation=scaleIn&desc=Study%20every%20day%20to%20become%20a%20better%20then%20yesterday...&descAlign=59&descAlignY=52&fontAlignY=36&descSize=16'>
+<img src='https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=400&fontSize=48&text=Welcome%20to%20Agratos&animation=scaleIn&desc=Study%20every%20day%20to%20become%20a%20better%20then%20yesterday...&descAlign=59&descAlignY=52&fontAlignY=36&descSize=16'>
   
 <!-- # Front-End Developer
 

@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 import { marked } from 'marked';
-import useFetch from 'hooks/useFetch';
+import { useFetch } from 'hooks/useFetch';
 
-interface mdFileRenderProps {
+interface MdFileRenderProps {
     mdFile: string;
 }
-const MdFileRender = ({mdFile}: mdFileRenderProps ) => {
+const MdFileRender = ({mdFile}: MdFileRenderProps ) => {
     const [mdText] = useFetch(mdFile);
 
     return (
@@ -20,7 +20,6 @@ const Wrapper = styled.div`
 `;
 const MdRender = styled.article`
     margin: 0 auto;
-    width: 70%;
 `;
 
 export default MdFileRender

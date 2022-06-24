@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const useCount = (start: number, end: number, interval: number, gap: number, increase: string) => {
+export const useCount = (start: number, end: number, interval: number, gap: number, increase: string) => {
     const [count, setCount] = useState(start);
     useEffect(() => {
         const timeout = setTimeout(() => {
@@ -15,5 +15,3 @@ const useCount = (start: number, end: number, interval: number, gap: number, inc
 
     return count;
 };
-
-export default useCount;
