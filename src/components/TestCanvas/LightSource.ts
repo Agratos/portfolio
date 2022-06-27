@@ -33,7 +33,8 @@ const LightSource = (canvasWidth: number, canvasHeight: number) => {
     const drawLightLines = (
         ctx: CanvasRenderingContext2D,
         pointCenterX: number,
-        pointCenterY: number) => {
+        pointCenterY: number
+        ) => {
             ctx.strokeStyle = 'rgb(176, 176, 212, 0.24)';
             ctx.lineWidth = 1;
             ctx.moveTo(centerX, centerY - radius);
