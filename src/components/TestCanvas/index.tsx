@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { useCanvas } from 'hooks/useCanvas';
 import LightSource from './LightSource';
 import Point from './Point';
+import { useClientWidthHeight } from 'hooks/useClientWidthHeight';
 
 interface TestCanvasProps {
     canvasWidth: number;
